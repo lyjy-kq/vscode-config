@@ -1,0 +1,97 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    // Ctrl + mouse wheel zooms the editor font instead of the whole UI.
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.confirmSaveUntitledWorkspace": false,
+    "explorer.confirmPasteNative": false,
+    "workspace-manager.includeGlobPattern": [
+        "C:\\Users\\s-lyjy\\Desktop\\"
+    ],
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "c:\\Users\\s-lyjy\\Desktop\\Repo\\work\\03 算法\\vscode",
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.statusBarItem.enabled": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gist}:/**/*.md": "default",
+        "*.doc": "wpsAutoOpen.office",
+        "*.docx": "wpsAutoOpen.office",
+        "*.xlsx": "wpsAutoOpen.office",
+        "*.mp3": "default",
+        "*.mp4": "vscode.videoPreview",
+        "*.m4a": "default",
+        "*.wav": "vscode.audioPreview",
+        "*.html": "default"
+    },
+    "markdown-image.base.fileNameFormat": "${YY }",
+    "workbench.browser.openLocalhostLinks": false,
+    "chat.disableAIFeatures": true,
+    "remote.SSH.remotePlatform": {
+        "119.45.20.172": "linux"
+    },
+    "chatgpt.localeOverride": "zh-CN",
+    "chatgpt.reviewDelivery": "inline",
+    "flowMd.imageSaveFolder": "assets",
+    "flowMd.modeSwitcher": "buttons",
+    "flowMd.theme": "dark",
+    "debug.onTaskErrors": "debugAnyway",
+    "flowMd.fontScale": 1.1,
+    "workbench.editor.enablePreview": false,
+    "window.openFoldersInNewWindow": "on",
+    "editor.largeFileOptimizations": true,
+    "editor.fontSize": 16,
+    "claudeCode.preferredLocation": "panel",
+    "git.autofetch": false,
+    // 终端补全快捷键由 VS Code 处理，避免补全快捷键被透传成普通输入。
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.terminal.acceptSelectedSuggestion",
+        "workbench.action.terminal.triggerSuggest"
+    ],
+    "terminal.integrated.sendKeybindingsToShell": false,
+    "interactiveWindow.executeWithShiftEnter": true,
+    "workbench.colorTheme": "Solarized Light",
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.multiCursorModifier": "alt",
+    "editor.definitionLinkOpensInPeek": true,
+    "go.toolsManagement.autoUpdate": false,
+    "workbench.editor.useModal": "some",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "extensions.autoUpdate": "off",
+    "update.mode": "manual",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/build/**": true,
+        "**/.next/**": true,
+        "**/coverage/**": true,
+        "**/.turbo/**": true,
+        "**/.cache/**": true,
+        "**/tmp/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.next": true,
+        "**/coverage": true,
+        "**/.turbo": true,
+        "**/.cache": true,
+        "**/tmp": true
+    },
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": false
+}

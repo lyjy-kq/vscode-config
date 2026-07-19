@@ -1,0 +1,8 @@
+settings/*.local.json
+profiles/**/globalStorage/
+profiles/**/History/
+profiles/**/workspaceStorage/
+backups/
+export-staging/
+*.token
+*.secret

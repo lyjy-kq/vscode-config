@@ -1,0 +1,227 @@
+[
+    // Free Ctrl+B from the sidebar toggle so Markdown files can keep the bold shortcut.
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    // Ctrl +/- changes editor font size only when the editor has focus.
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.fontZoomIn",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.fontZoomOut",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "chatgpt.openSidebar"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!isSessionsWindow && !terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+c",
+        "command": "-copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+q",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "editorTextFocus && inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+q",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "revealFileInOS",
+        "when": "!editorFocus"
+    },
+    // Ctrl+Shift+F opens the active file's folder in Windows Explorer.
+    {
+        "key": "ctrl+shift+f",
+        "command": "revealFileInOS"
+    },
+    // Ctrl+Shift+J opens a VSCode terminal in the active file's folder.
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+            "cwd": "${fileDirname}"
+        }
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "-revealFileInOS",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+w",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.terminal.triggerSuggest",
+        "when": "terminalFocus && terminalIsOpen"
+    },
+    {
+        "key": "alt+right",
+        "command": "editor.action.inlineSuggest.acceptNextWord",
+        "when": "cursorBeforeGhostText && inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-editor.action.inlineSuggest.acceptNextWord",
+        "when": "cursorBeforeGhostText && inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "editor.action.inlineSuggest.commitAlternativeAction",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-editor.action.inlineSuggest.commitAlternativeAction",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "editor.action.inlineSuggest.commitAlternativeAction",
+        "when": "inlineEditIsVisible && inlineSuggestionAlternativeActionVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-editor.action.inlineSuggest.commitAlternativeAction",
+        "when": "inlineEditIsVisible && inlineSuggestionAlternativeActionVisible"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+q",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+q",
+        "command": "acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.terminal.acceptSelectedSuggestion",
+        "when": "terminalFocus && terminalIsOpen && terminalSuggestWidgetVisible"
+    },
+    {
+        "key": "enter",
+        "command": "-workbench.action.terminal.acceptSelectedSuggestion",
+        "when": "simpleSuggestWidgetExplicitlyInvoked && simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetExplicitlyInvoked && simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && simpleSuggestWidgetHasNavigated && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && simpleSuggestWidgetHasNavigated && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && !simpleSuggestWidgetFirstSuggestionFocused || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.selectionMode != 'partial' || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && !simpleSuggestWidgetFirstSuggestionFocused || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.selectionMode != 'partial'"
+    },
+    {
+        "key": "tab",
+        "command": "-workbench.action.terminal.acceptSelectedSuggestion",
+        "when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+    },
+    {
+        "key": "enter",
+        "command": "-workbench.action.terminal.acceptSelectedSuggestionEnter",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.runOnEnter != 'never' || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.runOnEnter != 'never'"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "-workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
+    }
+]
